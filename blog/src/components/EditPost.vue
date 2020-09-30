@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import blogService from '@/blogService'
+import BlogServoce from '@/blogService'
 
     export default {
         data() {
@@ -41,7 +41,7 @@ import blogService from '@/blogService'
         },
         methods: {
            async createPost(){
-               await blogService.insertPost(this.blog);
+               await BlogServoce.insertPost(this.blog);
                this.$router.push({name:"home"});
            }
         }

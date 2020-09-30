@@ -4,13 +4,15 @@ const express = require('express'),
 
 // Index
 router.get('/',blogController.blog_index)
-// Create
-router.get('/create',blogController.blog_crate_get)
+// // Create
+// router.get('/create',blogController.blog_crate_get)
 // Store 
 router.post('/',blogController.blog_create_post)
 //Show single blog 
 router.get('/:id',blogController.blog_details)
 // Delete
 router.delete('/:id',blogController.blog_delete)
+//Update blog 
+router.put('/:id',blogController.blog_update)
 
 module.exports = router

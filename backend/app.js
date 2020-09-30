@@ -3,7 +3,6 @@ const express = require('express'),
       cors = require('cors'),
       app = express(),
       blogRoutes = require('./routes/blogRoute');
-
 // connect to mongoDB
 const dbURI = 'mongodb+srv://ReiTest:2m8cCjHGa6x0mfDy@firstproject.igvdt.mongodb.net/node-tuts?retryWrites=true&w=majority';
 mongoose.connect(dbURI,{ useNewUrlParser: true,useUnifiedTopology: true } )

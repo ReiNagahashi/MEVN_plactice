@@ -14,6 +14,11 @@ const routes = [
         name:'create',
         component:() => import('../components/Create.vue')
     },
+    {
+        path:'/show/:post_id',
+        name:'showPost',
+        component:() => import('../components/ShowPost.vue')
+    },
 ]
 
 const router = new VueRouter({
